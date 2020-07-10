@@ -52,6 +52,8 @@
 
 ### Docker Registry:
 ```
+ Clear Registry: If registry already running clear it first
+ %>docker container stop registry && docker container rm -v registry
  Start Registry:
  %>docker run -d -p 5000:5000 --restart=always --name registry registry:2
 
